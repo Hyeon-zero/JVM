@@ -23,7 +23,7 @@
   ② Java Compiler(javac)가 Java Source Code(.java)를 Java Byte Code(.class)로 compile 한다. <br>
   ③ Class Loader를 통해 JVM Runtime Data Area로 로딩한다. <br>
   ④ Runtime Data Area에 로딩된 .class들은 Execution Engine을 통해 해석한다. <br>
-  ⑤ 해석된 Byte Code는 Runtime Data Area의 각 Area에 배치되어 수행하며 이 과정에서 Execution Engine에 의해 GC(Garbage Collector)의 작동 <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;과 Thread Synchronization가 이루어진다. <br>
+  ⑤ 해석된 Byte Code는 Runtime Data Area의 각 Area에 배치되어 수행하며 이 과정에서 Execution Engine에 의해 <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GC(Garbage Collector)의 작동과 Thread Synchronization가 이루어진다. <br>
     
 <br>
