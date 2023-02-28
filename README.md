@@ -16,7 +16,7 @@
 ## JIT Compiler
    - JIT Compiler는 같은 코드를 매번 해석하지 않고, 실행할 때 컴파일을 하면서 해당코드를 캐싱한다. 이후에는 바뀐 부문만 컴파일하고, 나머지는 캐싱된 코드를 사용한다. <br>
    <br>
-   <img width="239" alt="image" src="https://user-images.githubusercontent.com/108206105/221811009-85e30637-ee20-4387-804a-c42da5f538ea.png">
+   <img width="396" alt="image" src="https://user-images.githubusercontent.com/108206105/221838966-ef6016dd-19ca-476d-bd79-033031106319.png">
 <br>
 
 
