@@ -40,12 +40,12 @@
   - Class Loader는 Loading → Linking → Initialization 순으로 진행된다. <br>
   <br>
   
-  - Loading : 클래스 파일을 탑재하는 과정 <br>
-  - Linking : 클래스 파일을 사용하기 위해 검증하고, 기본값으로 초기화하는 과정 <br>
-    ① Verify (확인하다) : Class Loader에 넘어온 .class 파일이 유효한지 확인하는 과정 <br>
-    ② Prepare (준비하다) : 클래스의 static 변수와 기본값에 필요한 메모리 공간을 준비한다. <br>
-    ③ Resolution (해결) : 실제 메모리 주소 값으로 변경해주는 작업을 한다. <br>
-  - Initialization : static field의 값들을 정의한 값으로 초기화하는 과정 <br>
+    - Loading : 클래스 파일을 탑재하는 과정 
+    - Linking : 클래스 파일을 사용하기 위해 검증하고, 기본값으로 초기화하는 과정 
+      ① Verify (확인하다) : Class Loader에 넘어온 .class 파일이 유효한지 확인하는 과정 
+      ② Prepare (준비하다) : 클래스의 static 변수와 기본값에 필요한 메모리 공간을 준비한다. 
+      ③ Resolution (해결) : 실제 메모리 주소 값으로 변경해주는 작업을 한다. 
+    - Initialization : static field의 값들을 정의한 값으로 초기화하는 과정 
   
   <img width="554" alt="image" src="https://user-images.githubusercontent.com/108206105/221812761-a6ed01f8-add7-476a-94e1-630359cad6d3.png">
 
