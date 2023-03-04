@@ -3,7 +3,7 @@
 - JVM(Java Virtual Machine)이란 자바 프로그램 실행 환경을 만들어주는 소프트웨어이다. 
 - Java는 OS에 종속적이지 않다는 특징을 가지고 있다. 
 - Java는 종속적이지 않기 때문에 CPU가 .java 파일을 인식하지 못한다. 따라서 JVM을 통해 CPU가 java를 인식하여 프로그램을 수행하도록 한다. 
-- JVM을 통해 .java → .class(Byte Code) 으로 변환하여 실행 (변환과정을 java compiler(javac.exe)가 실행) 
+- .java → .class(Byte Code) 으로 변환하여 실행 (변환과정을 java compiler(javac)가 실행) 
 <br>
 
 ## Byte Code를 읽는 방식
@@ -44,7 +44,7 @@
     - Linking : 클래스 파일을 사용하기 위해 검증하고, 기본값으로 초기화하는 과정 
       ① Verify (확인하다) : Class Loader에 넘어온 .class 파일이 유효한지 확인하는 과정 
       ② Prepare (준비하다) : 클래스의 static 변수와 기본값에 필요한 메모리 공간을 준비한다. 
-      ③ Resolution (해결) : 실제 메모리 주소 값으로 변경해주는 작업을 한다. 
+      ③ Resolve (해결하다) : 실제 메모리 주소 값으로 변경해주는 작업을 한다. 
     - Initialization : static field의 값들을 정의한 값으로 초기화하는 과정 
   
   <img width="554" alt="image" src="https://user-images.githubusercontent.com/108206105/221812761-a6ed01f8-add7-476a-94e1-630359cad6d3.png">
