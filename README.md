@@ -11,6 +11,7 @@
   2. JIT(Just In Time) 방식 : Interpreter의 느린 속도를 보완하기 위해 만들어졌다. Byte Code를 실행하는 시점에 각 OS에 맞는 Natvie Code로 변환하여 실행 속도를 
                          개선하였다. 그러나 Byte Code를 Native Code로 변환하는 데에도 비용이 소모되므로 JVM은 모든 코드를 JIT 방식으로 실행하지 않고, Interpreter 방식을
                          사용하다가 일정 기준이 넘어가면 JIT 방식으로 사용한다. 
+  - Native Code로 변환하는 이유는 Byte Code보다 Native Code가 특정 하드웨어 및 운영 체제에 최적화되어 있어 Java 프로그램을 더 빠르고 효율적으로 실행할 수 있기 때문이다.
 <br>
 
 ## JIT Compiler
