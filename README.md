@@ -6,6 +6,16 @@
 - .java → .class(Byte Code) 으로 변환하여 실행 (변환과정을 java compiler(javac)가 실행) 
 <br>
 
+## JVM 동작 방식
+  ① Java로 개발된 프로그램을 실행하면 JVM은 OS로부터 Memory를 할당한다. <br>
+  ② Java Compiler(javac)가 Java Source Code(.java)를 Java Byte Code(.class)로 compile 한다. <br>
+  ③ Class Loader를 통해 JVM Runtime Data Area로 로딩한다. <br>
+  ④ Runtime Data Area에 로딩된 .class들은 Execution Engine을 통해 해석한다. <br>
+  ⑤ 해석된 Byte Code는 Runtime Data Area의 각 Area에 배치되어 수행하며 이 과정에서 Execution Engine에 의해 <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GC(Garbage Collector)의 작동과 Thread Synchronization가 이루어진다. <br>
+
+<br>
+
 ## Byte Code를 읽는 방식
   1. Interpreter 방식 : Byte Code를 한 줄씩 읽어 해석하고 실행하는 방식이다. 단점은 속도가 느리다.
   2. JIT(Just In Time) 방식 : Interpreter의 느린 속도를 보완하기 위해 만들어졌다. Byte Code를 실행하는 시점에 각 OS에 맞는 Natvie Code로 변환하여 실행 속도를 
@@ -18,17 +28,6 @@
    - JIT Compiler는 같은 코드를 매번 해석하지 않고, 실행할 때 컴파일을 하면서 해당코드를 캐싱한다. 이후에는 바뀐 부문만 컴파일하고, 나머지는 캐싱된 코드를 사용한다. <br>
    <br>
    <img width="396" alt="image" src="https://user-images.githubusercontent.com/108206105/221838966-ef6016dd-19ca-476d-bd79-033031106319.png">
-<br>
-
-
-## JVM 동작 방식
-  ① Java로 개발된 프로그램을 실행하면 JVM은 OS로부터 Memory를 할당한다. <br>
-  ② Java Compiler(javac)가 Java Source Code(.java)를 Java Byte Code(.class)로 compile 한다. <br>
-  ③ Class Loader를 통해 JVM Runtime Data Area로 로딩한다. <br>
-  ④ Runtime Data Area에 로딩된 .class들은 Execution Engine을 통해 해석한다. <br>
-  ⑤ 해석된 Byte Code는 Runtime Data Area의 각 Area에 배치되어 수행하며 이 과정에서 Execution Engine에 의해 <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GC(Garbage Collector)의 작동과 Thread Synchronization가 이루어진다. <br>
-    
 <br>
 
 ## Class Loader
